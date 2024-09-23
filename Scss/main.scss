@@ -1,0 +1,1060 @@
+@import "./variable";
+@import "./mixin";
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../Gilroy-Regular.ttf");
+}
+
+// Header Section Start
+
+.bitcoin-bg-header {
+  background: url(../images/header-bg.png) no-repeat;
+  background-size: auto;
+  background-position-x: right;
+  background-position-y: top;
+}
+
+header {
+  padding-top: 3rem;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.bg-light {
+  background-color: #1a1d27 !important;
+  border-radius: 2.2rem;
+  padding: 3rem 4.6rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-size: $fs-16;
+  &:hover {
+    color: #5f6168;
+  }
+}
+
+.navbar-nav {
+  gap: 3.2rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  position: absolute;
+  background-color: black;
+}
+
+.introduction-dropdown-border {
+  border: 1px solid #31343d;
+  padding: 0.7rem;
+  border-radius: 1rem;
+}
+
+.individual-gap {
+  gap: 1.5rem;
+}
+
+.dropdown-menu {
+  padding: 2.4rem;
+}
+
+.dropdown-item {
+  font-size: $fs-16;
+  color: $white-color;
+  padding: 0.6rem;
+  &:hover {
+    color: #b9902a;
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover .introduction-dropdown-border img {
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+  color: white;
+}
+
+// inside hover
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: none;
+  background-color: transparent;
+}
+
+.dropdown-menu[data-bs-popper] {
+  top: 100%;
+  left: -100%;
+  margin-top: 2.125rem;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../images/menu-bar.png);
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+// Hero Section Start
+
+.bitcoin-bg-hero {
+  background: url(../images/hero-b.png) no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: 12.4rem;
+  h1 {
+    // max-width: 800px;
+    padding-inline: 10rem;
+    line-height: 6.4rem;
+    font-size: $fs-60;
+    color: white;
+  }
+  p {
+    margin-top: 2.4rem;
+    color: #5f6168;
+    font-size: $fs-16;
+  }
+  .hero-btn-gap {
+    gap: 2.4rem;
+    padding-block: 4.6rem 5.7rem;
+
+    .get-start-hero-btn {
+      @include button(#000, #f4c142, #000);
+      background-color: transparent;
+      @include button-hover-reverse;
+      &:hover {
+        color: #f4c142;
+      }
+    }
+    .what-bitcoin-hero-btn {
+      @include button(transparent, #31343d, white);
+      @include button-hover(#31343d);
+    }
+  }
+}
+
+.hero-img {
+  width: 100%;
+}
+
+// Transactions Section Start
+
+.transection-section {
+  padding-block: 5rem 10rem;
+}
+
+.transection-card {
+  padding: 3.2rem;
+  width: 385px;
+  border-radius: 10px;
+  background-color: #1a1d27;
+  h4 {
+    color: #5f6168;
+    font-size: $fs-16;
+    letter-spacing: 1.84px;
+  }
+  p {
+    padding-top: 2.4rem;
+    color: white;
+    font-size: $fs-30;
+  }
+}
+
+// Bitcoin Exchange Section Start
+
+.bitcoin-exchange-parent {
+  background-color: #1a1d27;
+  padding: 2.4rem 0rem 2.4rem 3.2rem;
+  border-radius: 1rem;
+}
+
+.usd-chart {
+  h3 {
+    font-size: $fs-16;
+    color: #5f6168;
+    letter-spacing: 1.84px;
+  }
+  h2 {
+    font-size: $fs-30;
+    color: white;
+    padding-top: 2.4rem;
+  }
+}
+
+.bitcoin-img {
+  margin-top: 2.4rem;
+  width: 100%;
+}
+
+.bitcoin-exchange-right-side {
+  padding-left: 3.1rem;
+  h3 {
+    font-size: $fs-16;
+    color: #5f6168;
+    letter-spacing: 1.84px;
+  }
+  .right-prive {
+    margin-top: 2.4rem;
+    gap: 1.9rem;
+
+    span {
+      font-size: $fs-30;
+      color: white;
+    }
+    button {
+      border: none;
+      padding: 1.2rem 1.5rem;
+      background-color: #16c784;
+      border-radius: 1rem;
+      font-size: $fs-14;
+      color: white;
+      box-shadow: 0px 3px 13px -3px rgba(22, 199, 132, 0.5);
+      img {
+        margin-right: 0.4rem;
+      }
+    }
+  }
+
+  .usd-form {
+    width: fit-content;
+    margin-top: 2.9rem;
+    gap: 2.9rem;
+    background-color: #151823;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    input {
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: $fs-14;
+      &:focus {
+        border: none;
+        outline: none;
+      }
+      &::placeholder {
+        font-size: $fs-14;
+      }
+    }
+    p {
+      color: white;
+      font-size: $fs-16;
+      text-transform: uppercase;
+      img {
+        margin-left: 0.4rem;
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+  h5 {
+    font-size: $fs-16;
+    color: #5f6168;
+    letter-spacing: 1.84px;
+    margin-block: 2.9rem 1.2rem;
+  }
+  .buy-btn {
+    @include bitcoin-buy(transparent, #16c784, white);
+    @include button-hover(#16c784);
+    z-index: 2;
+    margin-right: 2.3rem;
+  }
+  .sell-btn {
+    @include bitcoin-buy(transparent, #ea3943, white);
+    @include button-hover(#ea3943);
+    z-index: 2;
+  }
+}
+
+.pills-days {
+  width: fit-content;
+  float: right;
+  gap: 0.7rem;
+  border-radius: 1rem;
+  background-color: #151823;
+  padding: 0.4rem;
+  .day {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    &:hover {
+      background-color: #31343d;
+      color: white;
+    }
+    &.active {
+      background-color: #f4c142;
+      color: white;
+    }
+    span {
+      font-size: $fs-14;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Road Map
+
+.road-map-mar-blk {
+  padding-block: 9.6rem;
+}
+
+.road-map-parent {
+  background-color: #1a1d27;
+  border-radius: 10px;
+  padding: 3.2rem;
+  .road-map-parent-first-child {
+    margin-bottom: 2.5rem;
+    .road-map-heading {
+      h3 {
+        letter-spacing: 1.84px;
+        font-size: $fs-16;
+        color: #5f6168;
+      }
+      h2 {
+        font-size: $fs-30;
+        margin-top: 2.4rem;
+        color: white;
+      }
+    }
+    .road-map-veiw {
+      p {
+        cursor: pointer;
+        font-size: $fs-16;
+        color: #5f6168;
+        img {
+          padding-left: 0.9rem;
+        }
+        &:hover{
+          color: #f4c142;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.road-map-cards {
+  .road-map-card {
+    width: 300px;
+    padding: 2.4rem;
+    border-radius: 10px;
+    border: 1px solid #f4c142;
+    .card-yellow-circle {
+      border-radius: 50%;
+      border: 1px solid #f4c142;
+      width: 35px;
+      height: 35px;
+      .card-yellow-circle-inside {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        border: 1px solid #f4c142;
+        background-color: #f4c142;
+      }
+    }
+    h3 {
+      font-size: $fs-30;
+      padding-block: 5.7rem 2.4rem;
+      color: white;
+    }
+    p {
+      font-size: $fs-16;
+      line-height: 2.5rem;
+      color: #fff;
+      opacity: 0.3;
+    }
+  }
+}
+
+// About Us
+
+.about-us-bg {
+  background: url(../images/about-bg.png) no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.about-us {
+  gap: 14.3rem;
+
+  .about-content {
+    h2 {
+      font-size: $fs-30;
+      color: white;
+    }
+    p {
+      font-size: $fs-16;
+      line-height: 2.5rem;
+      color: #fff;
+      opacity: 0.3;
+      padding-block: 2.4rem;
+    }
+    .about-btn {
+      @include bitcoin-buy(transparent, #f4c142, white);
+      @include button-hover(#f4c142);
+      padding: 1.1rem 3.5rem;
+      text-transform: capitalize;
+      z-index: 2;
+    }
+  }
+  .triangle-container {
+    height: 400px;
+    position: relative;
+    background-color: transparent;
+
+    .triangle {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      .dash {
+        width: 100%;
+        height: 100%;
+      }
+      .top-gap {
+        gap: 2rem;
+        width: 70%;
+      }
+      .point {
+        position: absolute;
+        color: #ffffff;
+
+        .circle {
+          border-radius: 50%;
+          border: 1px solid #f4c142;
+          width: 35px;
+          height: 35px;
+          .card-yellow-circle-inside {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            border: 1px solid #f4c142;
+            background-color: #f4c142;
+          }
+        }
+
+        .bottom-two {
+          font-size: $fs-16;
+          color: #ffffff;
+          margin-top: 1.2rem;
+          display: block;
+          padding-left: 1rem;
+        }
+
+        &.point-top {
+          top: -7%;
+          left: 79%;
+          transform: translateX(-50%);
+          font-size: $fs-16;
+          color: #ffffff;
+        }
+
+        &.point-left {
+          bottom: -15%;
+          left: 44%;
+          transform: translateX(-50%);
+          width: 100%;
+        }
+
+        &.point-right {
+          bottom: -15%;
+          right: -21%;
+          transform: translateX(50%);
+        }
+      }
+    }
+  }
+}
+
+// Get Quick Overview For
+
+.get-quick-mar-blk {
+  padding-block: 9.6rem;
+}
+
+.get-quick-heading {
+  font-size: $fs-30;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 2.4rem;
+}
+
+.get-cards {
+  .get-card {
+    border-radius: 1rem;
+    background-color: #1a1d27;
+    // width: fit-content;
+    .get-card-content {
+      padding: 0rem 3.4rem 3.4rem;
+      h2 {
+        font-size: $fs-30;
+        color: #fff;
+      }
+      p {
+        font-size: $fs-16;
+        color: #f4c142;
+        padding-top: 1.6rem;
+      }
+    }
+  }
+}
+
+// Mailing Every Week
+
+.mailing-parent {
+  background-color: #1a1d27;
+  border-radius: 1rem;
+
+  .mailing-content {
+    padding: 3.4rem 7rem 3.4rem;
+    h4 {
+      font-size: $fs-16;
+      color: #5f6168;
+      letter-spacing: 1.84px;
+    }
+    h3 {
+      font-size: $fs-30;
+      padding-block: 2.4rem;
+      color: white;
+    }
+    form {
+      .text-mailing {
+        padding: 1rem 1.8rem;
+        border-radius: 1rem;
+        font-size: $fs-16;
+        color: white;
+        background-color: #151823;
+        border: none;
+        width: 60%;
+        margin-right: 2.4rem;
+
+        &:focus {
+          outline: none;
+          border: none;
+        }
+      }
+      .submit-mailing {
+        @include bitcoin-buy(transparent, #f4c142, white);
+        @include button-hover(#f4c142);
+        padding: 1.1rem 4rem;
+        z-index: 6;
+        text-align: end;
+      }
+      .checkbox {
+        margin-top: 1.6rem;
+        text-align: end;
+        display: block;
+        font-size: $fs-14;
+        color: #5f6168;
+        opacity: 1;
+        .styled-checkbox {
+          accent-color: #f4c142;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+// Footer
+
+.footer-bg {
+  background: url(../images/footer-bg.png) no-repeat;
+  background-size: auto;
+  background-position-x: left;
+  background-position-y: top;
+}
+
+.footer-links {
+  padding-top: 9.6rem;
+  padding-right: 8.6rem;
+}
+
+.footer-one {
+  h2 {
+    margin-bottom: 2.4rem;
+    font-size: $fs-16;
+    color: white;
+  }
+  ul {
+    li {
+      font-size: $fs-16;
+      color: #5f6168;
+      cursor: pointer;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  .link-li-gap {
+    gap: 1.2rem;
+  }
+}
+
+.donate {
+  span {
+    margin-right: 3.7rem;
+    font-size: $fs-16;
+    color: white;
+  }
+  button {
+    @include bitcoin-buy(transparent, #f4c142, white);
+    @include button-hover(#f4c142);
+    padding: 1.1rem 4rem;
+  }
+  p {
+    font-size: $fs-16;
+    color: #5f6168;
+    padding-top: 1.8rem;
+  }
+}
+
+.copy-right-parent {
+  padding-block: 5rem;
+}
+.copy-right {
+  font-size: $fs-16;
+  letter-spacing: 1.84px;
+  color: #5f6168;
+}
+
+.soical-linkgap {
+  gap: 1.7rem;
+  font-size: $fs-16;
+  letter-spacing: 1.84px;
+  color: #5f6168;
+  .network-status {
+    .status {
+      cursor: pointer;
+      margin-right: 4.8rem;
+      .doit-yellow {
+        border-radius: 50%;
+        width: 11px;
+        height: 11px;
+        background-color: #f4c142;
+        display: inline-block;
+        margin-right: 0.7rem;
+      }
+    }
+    .english {
+      cursor: pointer;
+    }
+  }
+}
+
+// Media Query
+
+@media screen and (max-width: 991px) {
+  // Container
+
+  .container {
+    padding-inline: 1.6rem;
+  }
+
+  // Header Start
+
+  .bitcoin-bg-header {
+    background-size: contain;
+  }
+
+  .bg-light {
+    background-color: #1a1d27 !important;
+    border-radius: 2.2rem;
+    padding: 1.6rem 1.6rem;
+  }
+
+  .navbar-nav {
+    gap: 3.2rem;
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .dropdown-menu[data-bs-popper] {
+    top: 38%;
+    left: 12%;
+    margin-top: 2.125rem;
+  }
+
+  // Hero Section Start
+
+  .bitcoin-b {
+    .bitcoin-bg-hero {
+      background-size: cover;
+      background-position: inherit;
+    }
+  }
+
+  .hero-content {
+    margin-top: 3rem;
+    h1 {
+      // max-width: 800px;
+      padding-inline: 0rem;
+      line-height: 3.4rem;
+      font-size: $fs-30;
+    }
+    p {
+      margin-top: 1rem;
+    }
+    .hero-btn-gap {
+      gap: 1.2rem;
+      margin-top: 2.4rem;
+    }
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  // Transactions Section Start
+
+  .transection-section {
+    padding-block: 5rem;
+  }
+  .transection-card-gap {
+    gap: 1.2rem;
+  }
+  .transection-card {
+    padding: 2.4rem;
+    width: 320px;
+  }
+
+  // Bitcoin Exchange Section Start
+
+  .bitcoin-exchange-parent {
+    background-color: #1a1d27;
+    padding: 1.6rem;
+  }
+
+  .usd-chart {
+    h2 {
+      font-size: $fs-30;
+      color: white;
+      padding-top: 1.6rem;
+    }
+  }
+
+  .bitcoin-img {
+    margin-top: 1.6rem;
+    width: 100%;
+  }
+
+  .bitcoin-exchange-right-side {
+    padding-left: 0rem;
+    h3 {
+      margin-top: 1.6rem;
+    }
+    .right-prive {
+      margin-top: 1.6rem;
+    }
+
+    .usd-form {
+      width: fit-content;
+      margin-top: 2.4rem;
+    }
+    h5 {
+      font-size: $fs-16;
+      color: #5f6168;
+      letter-spacing: 1.84px;
+      margin-block: 1.6rem 1.6rem;
+    }
+    .buy-btn {
+      margin-right: 0rem;
+      display: block;
+      width: 100%;
+    }
+    .sell-btn {
+      margin-top: 1.6rem;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .pills-days {
+    margin-top: 1.6rem;
+    width: fit-content;
+    float: left;
+    gap: 0.7rem;
+    border-radius: 1rem;
+    background-color: #151823;
+    padding: 0.4rem;
+    .day {
+      width: 33px;
+      height: 33px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.7rem;
+      border-radius: 1rem;
+      background-color: transparent;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      &:hover {
+        background-color: #31343d;
+        color: white;
+      }
+      &.active {
+        background-color: #f4c142;
+        color: white;
+      }
+      span {
+        font-size: $fs-14;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  // Road Map
+
+  .road-map-mar-blk {
+    padding-block: 3.6rem;
+  }
+
+  .road-map-parent {
+    padding: 2rem 1.6rem;
+    .road-map-parent-first-child {
+      margin-bottom: 2.4rem;
+      gap: 1rem;
+      .road-map-heading {
+        align-self: flex-start;
+        h2 {
+          margin-top: 1rem;
+        }
+      }
+      .road-map-veiw {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .road-map-cards {
+    gap: 2rem;
+    .road-map-card {
+      width: 100%;
+      padding: 1.6rem;
+
+      h3 {
+        padding-block: 4rem 2.4rem;
+      }
+    }
+  }
+
+  // About Us
+
+  .about-us-bg {
+    background: url(../images/about-bg.png) no-repeat;
+    background-size: auto;
+    background-position: right, center;
+  }
+
+  .about-us {
+    gap: 1rem;
+
+    .about-content {
+      text-align: center;
+      width: 100%;
+
+      .about-btn {
+        width: 100%;
+      }
+    }
+
+    .triangle-container {
+      height: 400px;
+      position: relative;
+      background-color: transparent;
+
+      .triangle {
+        width: 200px;
+        height: 200px;
+
+        .dash {
+          width: 100%;
+          height: 100%;
+        }
+        .top-gap {
+          gap: 0.5rem;
+          width: 70%;
+        }
+        .point {
+          .circle {
+            width: 25px;
+            height: 25px;
+            .card-yellow-circle-inside {
+              width: 11px;
+              height: 11px;
+            }
+          }
+
+          .bottom-two {
+            font-size: $fs-14;
+            color: #ffffff;
+            margin-top: 1.2rem;
+            display: block;
+            padding-left: 0rem;
+          }
+
+          &.point-top {
+            width: 100%;
+            top: -19%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: $fs-14;
+            color: #ffffff;
+          }
+
+          &.point-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            bottom: -26%;
+            left: 44%;
+            transform: translateX(-50%);
+            width: 100%;
+            .flex-mobile-start {
+              align-self: flex-start;
+            }
+          }
+
+          &.point-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            bottom: -25%;
+            right: -17%;
+            transform: translateX(50%);
+            .flex-mobile-started {
+              align-self: flex-start;
+            }
+            .break-mobile {
+              max-width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Get Quick Overview For
+
+  .get-quick-mar-blk {
+    padding-block: 3.6rem;
+  }
+
+  .get-quick-heading {
+    font-size: $fs-16;
+  }
+
+  .get-cards {
+    gap: 2rem;
+  }
+
+  // Mailing Every Week
+
+  .mailing-parent {
+    gap: 2rem;
+
+    .mailing-content {
+      padding: 1.6rem;
+      h4 {
+        font-size: $fs-14;
+      }
+      h3 {
+        font-size: $fs-16;
+        padding-block: 1.6rem;
+      }
+      form {
+        .text-mailing {
+          width: 100%;
+          margin-right: 0rem;
+        }
+        .submit-mailing {
+          margin-top: 2rem;
+          width: 100%;
+
+          text-align: center;
+        }
+        .checkbox {
+          margin-top: 1rem;
+          text-align: start;
+        }
+      }
+    }
+  }
+
+  // Footer
+
+  .footer-bg {
+    background: url(../images/footer-bg.png) no-repeat;
+    background-size: auto;
+    background-position-x: right;
+    background-position-y: center;
+  }
+
+  .footer-links {
+    padding-top: 3.6rem;
+    padding-right: 0rem;
+    gap: 3rem;
+  }
+
+  .footer-one {
+    h2 {
+      margin-bottom: 1.2rem;
+    }
+
+    .copy-right-parent {
+      padding-block: 3rem;
+    }
+    .copy-right {
+      font-size: $fs-16;
+      letter-spacing: 1.84px;
+      color: #5f6168;
+      text-align: center;
+    }
+
+    .soical-linkgap {
+      color: #5f6168;
+      .network-status {
+        padding-top: 1rem;
+      }
+    }
+  }
+  .copy-right-parent {
+    padding-block: 3rem;
+  }
+
+  .soical-linkgap {
+    gap: 1.7rem;
+    font-size: $fs-16;
+    letter-spacing: 1.84px;
+    color: #5f6168;
+    .network-status {
+      padding-top: 1.6rem;
+    }
+  }
+}

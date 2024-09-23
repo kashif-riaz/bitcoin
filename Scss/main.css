@@ -1,0 +1,1126 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../Gilroy-Regular.ttf");
+}
+.bitcoin-bg-header {
+  background: url(../images/header-bg.png) no-repeat;
+  background-size: auto;
+  background-position-x: right;
+  background-position-y: top;
+}
+
+header {
+  padding-top: 3rem;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.bg-light {
+  background-color: #1a1d27 !important;
+  border-radius: 2.2rem;
+  padding: 3rem 4.6rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-size: 1.6rem;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #5f6168;
+}
+
+.navbar-nav {
+  gap: 3.2rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  position: absolute;
+  background-color: black;
+}
+
+.introduction-dropdown-border {
+  border: 1px solid #31343d;
+  padding: 0.7rem;
+  border-radius: 1rem;
+}
+
+.individual-gap {
+  gap: 1.5rem;
+}
+
+.dropdown-menu {
+  padding: 2.4rem;
+}
+
+.dropdown-item {
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 0.6rem;
+}
+.dropdown-item:hover {
+  color: #b9902a;
+  transition: all 0.3s ease-in-out;
+}
+.dropdown-item:hover .introduction-dropdown-border img {
+  transform: scale(1.2);
+  transition: all 1s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+  color: white;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: none;
+  background-color: transparent;
+}
+
+.dropdown-menu[data-bs-popper] {
+  top: 100%;
+  left: -100%;
+  margin-top: 2.125rem;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../images/menu-bar.png);
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.bitcoin-bg-hero {
+  background: url(../images/hero-b.png) no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: 12.4rem;
+}
+.hero-content h1 {
+  padding-inline: 10rem;
+  line-height: 6.4rem;
+  font-size: 6rem;
+  color: white;
+}
+.hero-content p {
+  margin-top: 2.4rem;
+  color: #5f6168;
+  font-size: 1.6rem;
+}
+.hero-content .hero-btn-gap {
+  gap: 2.4rem;
+  padding-block: 4.6rem 5.7rem;
+}
+.hero-content .hero-btn-gap .get-start-hero-btn {
+  border: none;
+  padding: 1.6rem 4rem;
+  width: 20rem;
+  border-radius: 1rem;
+  background-color: #000;
+  border: 1px solid #f4c142;
+  font-size: 1.6rem;
+  position: relative;
+  display: inline-block;
+  color: #000;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  background-color: transparent;
+  position: relative;
+}
+.hero-content .hero-btn-gap .get-start-hero-btn::after {
+  content: "";
+  position: absolute;
+  color: #f4c142;
+  bottom: -26%;
+  left: -17%;
+  width: 144%;
+  height: 162%;
+  background-color: #f4c142;
+  border-radius: 50%;
+  transform: scale(15);
+  z-index: -1;
+  transition: transform 0.8s ease-in-out;
+}
+.hero-content .hero-btn-gap .get-start-hero-btn:hover::after {
+  transform: scale(1);
+  bottom: -13%;
+  left: -17%;
+  width: 17%;
+  height: 52%;
+}
+.hero-content .hero-btn-gap .get-start-hero-btn:not(:hover)::after {
+  transition: transform 1.2s ease-in-out, bottom 1.2s ease-in-out, width 1.2s ease-in-out, height 1.2s ease-in-out;
+}
+.hero-content .hero-btn-gap .get-start-hero-btn:hover {
+  color: #f4c142;
+}
+.hero-content .hero-btn-gap .what-bitcoin-hero-btn {
+  border: none;
+  padding: 1.6rem 4rem;
+  width: 20rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  border: 1px solid #31343d;
+  font-size: 1.6rem;
+  position: relative;
+  display: inline-block;
+  color: white;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+.hero-content .hero-btn-gap .what-bitcoin-hero-btn::before {
+  content: "";
+  position: absolute;
+  bottom: -13%;
+  left: -17%;
+  width: 17%;
+  height: 52%;
+  background-color: #31343d;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+  transition: transform 0.5s ease-in-out;
+}
+.hero-content .hero-btn-gap .what-bitcoin-hero-btn:hover::before {
+  transform: scale(15);
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.transection-section {
+  padding-block: 5rem 10rem;
+}
+
+.transection-card {
+  padding: 3.2rem;
+  width: 385px;
+  border-radius: 10px;
+  background-color: #1a1d27;
+}
+.transection-card h4 {
+  color: #5f6168;
+  font-size: 1.6rem;
+  letter-spacing: 1.84px;
+}
+.transection-card p {
+  padding-top: 2.4rem;
+  color: white;
+  font-size: 3rem;
+}
+
+.bitcoin-exchange-parent {
+  background-color: #1a1d27;
+  padding: 2.4rem 0rem 2.4rem 3.2rem;
+  border-radius: 1rem;
+}
+
+.usd-chart h3 {
+  font-size: 1.6rem;
+  color: #5f6168;
+  letter-spacing: 1.84px;
+}
+.usd-chart h2 {
+  font-size: 3rem;
+  color: white;
+  padding-top: 2.4rem;
+}
+
+.bitcoin-img {
+  margin-top: 2.4rem;
+  width: 100%;
+}
+
+.bitcoin-exchange-right-side {
+  padding-left: 3.1rem;
+}
+.bitcoin-exchange-right-side h3 {
+  font-size: 1.6rem;
+  color: #5f6168;
+  letter-spacing: 1.84px;
+}
+.bitcoin-exchange-right-side .right-prive {
+  margin-top: 2.4rem;
+  gap: 1.9rem;
+}
+.bitcoin-exchange-right-side .right-prive span {
+  font-size: 3rem;
+  color: white;
+}
+.bitcoin-exchange-right-side .right-prive button {
+  border: none;
+  padding: 1.2rem 1.5rem;
+  background-color: #16c784;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  color: white;
+  box-shadow: 0px 3px 13px -3px rgba(22, 199, 132, 0.5);
+}
+.bitcoin-exchange-right-side .right-prive button img {
+  margin-right: 0.4rem;
+}
+.bitcoin-exchange-right-side .usd-form {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 2.9rem;
+  gap: 2.9rem;
+  background-color: #151823;
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+.bitcoin-exchange-right-side .usd-form input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+}
+.bitcoin-exchange-right-side .usd-form input:focus {
+  border: none;
+  outline: none;
+}
+.bitcoin-exchange-right-side .usd-form input::-moz-placeholder {
+  font-size: 1.4rem;
+}
+.bitcoin-exchange-right-side .usd-form input::placeholder {
+  font-size: 1.4rem;
+}
+.bitcoin-exchange-right-side .usd-form p {
+  color: white;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.bitcoin-exchange-right-side .usd-form p img {
+  margin-left: 0.4rem;
+  margin-bottom: 0.3rem;
+}
+.bitcoin-exchange-right-side h5 {
+  font-size: 1.6rem;
+  color: #5f6168;
+  letter-spacing: 1.84px;
+  margin-block: 2.9rem 1.2rem;
+}
+.bitcoin-exchange-right-side .buy-btn {
+  border: none;
+  padding: 1.1rem 6rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  border: 1px solid #16c784;
+  font-size: 1.6rem;
+  position: relative;
+  display: inline-block;
+  color: white;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 2;
+  margin-right: 2.3rem;
+}
+.bitcoin-exchange-right-side .buy-btn::before {
+  content: "";
+  position: absolute;
+  bottom: -13%;
+  left: -17%;
+  width: 17%;
+  height: 52%;
+  background-color: #16c784;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+  transition: transform 0.5s ease-in-out;
+}
+.bitcoin-exchange-right-side .buy-btn:hover::before {
+  transform: scale(15);
+  transition: transform 0.5s ease-in-out;
+}
+.bitcoin-exchange-right-side .sell-btn {
+  border: none;
+  padding: 1.1rem 6rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  border: 1px solid #ea3943;
+  font-size: 1.6rem;
+  position: relative;
+  display: inline-block;
+  color: white;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 2;
+}
+.bitcoin-exchange-right-side .sell-btn::before {
+  content: "";
+  position: absolute;
+  bottom: -13%;
+  left: -17%;
+  width: 17%;
+  height: 52%;
+  background-color: #ea3943;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+  transition: transform 0.5s ease-in-out;
+}
+.bitcoin-exchange-right-side .sell-btn:hover::before {
+  transform: scale(15);
+  transition: transform 0.5s ease-in-out;
+}
+
+.pills-days {
+  width: -moz-fit-content;
+  width: fit-content;
+  float: right;
+  gap: 0.7rem;
+  border-radius: 1rem;
+  background-color: #151823;
+  padding: 0.4rem;
+}
+.pills-days .day {
+  width: 33px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.pills-days .day:hover {
+  background-color: #31343d;
+  color: white;
+}
+.pills-days .day.active {
+  background-color: #f4c142;
+  color: white;
+}
+.pills-days .day span {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.road-map-mar-blk {
+  padding-block: 9.6rem;
+}
+
+.road-map-parent {
+  background-color: #1a1d27;
+  border-radius: 10px;
+  padding: 3.2rem;
+}
+.road-map-parent .road-map-parent-first-child {
+  margin-bottom: 2.5rem;
+}
+.road-map-parent .road-map-parent-first-child .road-map-heading h3 {
+  letter-spacing: 1.84px;
+  font-size: 1.6rem;
+  color: #5f6168;
+}
+.road-map-parent .road-map-parent-first-child .road-map-heading h2 {
+  font-size: 3rem;
+  margin-top: 2.4rem;
+  color: white;
+}
+.road-map-parent .road-map-parent-first-child .road-map-veiw p {
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: #5f6168;
+}
+.road-map-parent .road-map-parent-first-child .road-map-veiw p img {
+  padding-left: 0.9rem;
+}
+.road-map-parent .road-map-parent-first-child .road-map-veiw p:hover {
+  color: #f4c142;
+  transition: all 0.5s ease-in-out;
+}
+
+.road-map-cards .road-map-card {
+  width: 300px;
+  padding: 2.4rem;
+  border-radius: 10px;
+  border: 1px solid #f4c142;
+}
+.road-map-cards .road-map-card .card-yellow-circle {
+  border-radius: 50%;
+  border: 1px solid #f4c142;
+  width: 35px;
+  height: 35px;
+}
+.road-map-cards .road-map-card .card-yellow-circle .card-yellow-circle-inside {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #f4c142;
+  background-color: #f4c142;
+}
+.road-map-cards .road-map-card h3 {
+  font-size: 3rem;
+  padding-block: 5.7rem 2.4rem;
+  color: white;
+}
+.road-map-cards .road-map-card p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #fff;
+  opacity: 0.3;
+}
+
+.about-us-bg {
+  background: url(../images/about-bg.png) no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.about-us {
+  gap: 14.3rem;
+}
+.about-us .about-content h2 {
+  font-size: 3rem;
+  color: white;
+}
+.about-us .about-content p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #fff;
+  opacity: 0.3;
+  padding-block: 2.4rem;
+}
+.about-us .about-content .about-btn {
+  border: none;
+  padding: 1.1rem 6rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  border: 1px solid #f4c142;
+  font-size: 1.6rem;
+  position: relative;
+  display: inline-block;
+  color: white;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  padding: 1.1rem 3.5rem;
+  text-transform: capitalize;
+  z-index: 2;
+}
+.about-us .about-content .about-btn::before {
+  content: "";
+  position: absolute;
+  bottom: -13%;
+  left: -17%;
+  width: 17%;
+  height: 52%;
+  background-color: #f4c142;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+  transition: transform 0.5s ease-in-out;
+}
+.about-us .about-content .about-btn:hover::before {
+  transform: scale(15);
+  transition: transform 0.5s ease-in-out;
+}
+.about-us .triangle-container {
+  height: 400px;
+  position: relative;
+  background-color: transparent;
+}
+.about-us .triangle-container .triangle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+.about-us .triangle-container .triangle .dash {
+  width: 100%;
+  height: 100%;
+}
+.about-us .triangle-container .triangle .top-gap {
+  gap: 2rem;
+  width: 70%;
+}
+.about-us .triangle-container .triangle .point {
+  position: absolute;
+  color: #ffffff;
+}
+.about-us .triangle-container .triangle .point .circle {
+  border-radius: 50%;
+  border: 1px solid #f4c142;
+  width: 35px;
+  height: 35px;
+}
+.about-us .triangle-container .triangle .point .circle .card-yellow-circle-inside {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #f4c142;
+  background-color: #f4c142;
+}
+.about-us .triangle-container .triangle .point .bottom-two {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-top: 1.2rem;
+  display: block;
+  padding-left: 1rem;
+}
+.about-us .triangle-container .triangle .point.point-top {
+  top: -7%;
+  left: 79%;
+  transform: translateX(-50%);
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+.about-us .triangle-container .triangle .point.point-left {
+  bottom: -15%;
+  left: 44%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.about-us .triangle-container .triangle .point.point-right {
+  bottom: -15%;
+  right: -21%;
+  transform: translateX(50%);
+}
+
+.get-quick-mar-blk {
+  padding-block: 9.6rem;
+}
+
+.get-quick-heading {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 2.4rem;
+}
+
+.get-cards .get-card {
+  border-radius: 1rem;
+  background-color: #1a1d27;
+}
+.get-cards .get-card .get-card-content {
+  padding: 0rem 3.4rem 3.4rem;
+}
+.get-cards .get-card .get-card-content h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+.get-cards .get-card .get-card-content p {
+  font-size: 1.6rem;
+  color: #f4c142;
+  padding-top: 1.6rem;
+}
+
+.mailing-parent {
+  background-color: #1a1d27;
+  border-radius: 1rem;
+}
+.mailing-parent .mailing-content {
+  padding: 3.4rem 7rem 3.4rem;
+}
+.mailing-parent .mailing-content h4 {
+  font-size: 1.6rem;
+  color: #5f6168;
+  letter-spacing: 1.84px;
+}
+.mailing-parent .mailing-content h3 {
+  font-size: 3rem;
+  padding-block: 2.4rem;
+  color: white;
+}
+.mailing-parent .mailing-content form .text-mailing {
+  padding: 1rem 1.8rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  color: white;
+  background-color: #151823;
+  border: none;
+  width: 60%;
+  margin-right: 2.4rem;
+}
+.mailing-parent .mailing-content form .text-mailing:focus {
+  outline: none;
+  border: none;
+}
+.mailing-parent .mailing-content form .submit-mailing {
+  border: none;
+  padding: 1.1rem 6rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  border: 1px solid #f4c142;
+  font-size: 1.6rem;
+  position: relative;
+  display: inline-block;
+  color: white;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  padding: 1.1rem 4rem;
+  z-index: 6;
+  text-align: end;
+}
+.mailing-parent .mailing-content form .submit-mailing::before {
+  content: "";
+  position: absolute;
+  bottom: -13%;
+  left: -17%;
+  width: 17%;
+  height: 52%;
+  background-color: #f4c142;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+  transition: transform 0.5s ease-in-out;
+}
+.mailing-parent .mailing-content form .submit-mailing:hover::before {
+  transform: scale(15);
+  transition: transform 0.5s ease-in-out;
+}
+.mailing-parent .mailing-content form .checkbox {
+  margin-top: 1.6rem;
+  text-align: end;
+  display: block;
+  font-size: 1.4rem;
+  color: #5f6168;
+  opacity: 1;
+}
+.mailing-parent .mailing-content form .checkbox .styled-checkbox {
+  accent-color: #f4c142;
+  cursor: pointer;
+}
+
+.footer-bg {
+  background: url(../images/footer-bg.png) no-repeat;
+  background-size: auto;
+  background-position-x: left;
+  background-position-y: top;
+}
+
+.footer-links {
+  padding-top: 9.6rem;
+  padding-right: 8.6rem;
+}
+
+.footer-one h2 {
+  margin-bottom: 2.4rem;
+  font-size: 1.6rem;
+  color: white;
+}
+.footer-one ul li {
+  font-size: 1.6rem;
+  color: #5f6168;
+  cursor: pointer;
+}
+.footer-one ul li:hover {
+  color: white;
+}
+.footer-one .link-li-gap {
+  gap: 1.2rem;
+}
+
+.donate span {
+  margin-right: 3.7rem;
+  font-size: 1.6rem;
+  color: white;
+}
+.donate button {
+  border: none;
+  padding: 1.1rem 6rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  border: 1px solid #f4c142;
+  font-size: 1.6rem;
+  position: relative;
+  display: inline-block;
+  color: white;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  padding: 1.1rem 4rem;
+}
+.donate button::before {
+  content: "";
+  position: absolute;
+  bottom: -13%;
+  left: -17%;
+  width: 17%;
+  height: 52%;
+  background-color: #f4c142;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+  transition: transform 0.5s ease-in-out;
+}
+.donate button:hover::before {
+  transform: scale(15);
+  transition: transform 0.5s ease-in-out;
+}
+.donate p {
+  font-size: 1.6rem;
+  color: #5f6168;
+  padding-top: 1.8rem;
+}
+
+.copy-right-parent {
+  padding-block: 5rem;
+}
+
+.copy-right {
+  font-size: 1.6rem;
+  letter-spacing: 1.84px;
+  color: #5f6168;
+}
+
+.soical-linkgap {
+  gap: 1.7rem;
+  font-size: 1.6rem;
+  letter-spacing: 1.84px;
+  color: #5f6168;
+}
+.soical-linkgap .network-status .status {
+  cursor: pointer;
+  margin-right: 4.8rem;
+}
+.soical-linkgap .network-status .status .doit-yellow {
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+  background-color: #f4c142;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+.soical-linkgap .network-status .english {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding-inline: 1.6rem;
+  }
+  .bitcoin-bg-header {
+    background-size: contain;
+  }
+  .bg-light {
+    background-color: #1a1d27 !important;
+    border-radius: 2.2rem;
+    padding: 1.6rem 1.6rem;
+  }
+  .navbar-nav {
+    gap: 3.2rem;
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .dropdown-menu[data-bs-popper] {
+    top: 38%;
+    left: 12%;
+    margin-top: 2.125rem;
+  }
+  .bitcoin-b .bitcoin-bg-hero {
+    background-size: cover;
+    background-position: inherit;
+  }
+  .hero-content {
+    margin-top: 3rem;
+  }
+  .hero-content h1 {
+    padding-inline: 0rem;
+    line-height: 3.4rem;
+    font-size: 3rem;
+  }
+  .hero-content p {
+    margin-top: 1rem;
+  }
+  .hero-content .hero-btn-gap {
+    gap: 1.2rem;
+    margin-top: 2.4rem;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  .transection-section {
+    padding-block: 5rem;
+  }
+  .transection-card-gap {
+    gap: 1.2rem;
+  }
+  .transection-card {
+    padding: 2.4rem;
+    width: 320px;
+  }
+  .bitcoin-exchange-parent {
+    background-color: #1a1d27;
+    padding: 1.6rem;
+  }
+  .usd-chart h2 {
+    font-size: 3rem;
+    color: white;
+    padding-top: 1.6rem;
+  }
+  .bitcoin-img {
+    margin-top: 1.6rem;
+    width: 100%;
+  }
+  .bitcoin-exchange-right-side {
+    padding-left: 0rem;
+  }
+  .bitcoin-exchange-right-side h3 {
+    margin-top: 1.6rem;
+  }
+  .bitcoin-exchange-right-side .right-prive {
+    margin-top: 1.6rem;
+  }
+  .bitcoin-exchange-right-side .usd-form {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 2.4rem;
+  }
+  .bitcoin-exchange-right-side h5 {
+    font-size: 1.6rem;
+    color: #5f6168;
+    letter-spacing: 1.84px;
+    margin-block: 1.6rem 1.6rem;
+  }
+  .bitcoin-exchange-right-side .buy-btn {
+    margin-right: 0rem;
+    display: block;
+    width: 100%;
+  }
+  .bitcoin-exchange-right-side .sell-btn {
+    margin-top: 1.6rem;
+    display: block;
+    width: 100%;
+  }
+  .pills-days {
+    margin-top: 1.6rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    float: left;
+    gap: 0.7rem;
+    border-radius: 1rem;
+    background-color: #151823;
+    padding: 0.4rem;
+  }
+  .pills-days .day {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  .pills-days .day:hover {
+    background-color: #31343d;
+    color: white;
+  }
+  .pills-days .day.active {
+    background-color: #f4c142;
+    color: white;
+  }
+  .pills-days .day span {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  .road-map-mar-blk {
+    padding-block: 3.6rem;
+  }
+  .road-map-parent {
+    padding: 2rem 1.6rem;
+  }
+  .road-map-parent .road-map-parent-first-child {
+    margin-bottom: 2.4rem;
+    gap: 1rem;
+  }
+  .road-map-parent .road-map-parent-first-child .road-map-heading {
+    align-self: flex-start;
+  }
+  .road-map-parent .road-map-parent-first-child .road-map-heading h2 {
+    margin-top: 1rem;
+  }
+  .road-map-parent .road-map-parent-first-child .road-map-veiw {
+    align-self: flex-end;
+  }
+  .road-map-cards {
+    gap: 2rem;
+  }
+  .road-map-cards .road-map-card {
+    width: 100%;
+    padding: 1.6rem;
+  }
+  .road-map-cards .road-map-card h3 {
+    padding-block: 4rem 2.4rem;
+  }
+  .about-us-bg {
+    background: url(../images/about-bg.png) no-repeat;
+    background-size: auto;
+    background-position: right, center;
+  }
+  .about-us {
+    gap: 1rem;
+  }
+  .about-us .about-content {
+    text-align: center;
+    width: 100%;
+  }
+  .about-us .about-content .about-btn {
+    width: 100%;
+  }
+  .about-us .triangle-container {
+    height: 400px;
+    position: relative;
+    background-color: transparent;
+  }
+  .about-us .triangle-container .triangle {
+    width: 200px;
+    height: 200px;
+  }
+  .about-us .triangle-container .triangle .dash {
+    width: 100%;
+    height: 100%;
+  }
+  .about-us .triangle-container .triangle .top-gap {
+    gap: 0.5rem;
+    width: 70%;
+  }
+  .about-us .triangle-container .triangle .point .circle {
+    width: 25px;
+    height: 25px;
+  }
+  .about-us .triangle-container .triangle .point .circle .card-yellow-circle-inside {
+    width: 11px;
+    height: 11px;
+  }
+  .about-us .triangle-container .triangle .point .bottom-two {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-top: 1.2rem;
+    display: block;
+    padding-left: 0rem;
+  }
+  .about-us .triangle-container .triangle .point.point-top {
+    width: 100%;
+    top: -19%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+    color: #ffffff;
+  }
+  .about-us .triangle-container .triangle .point.point-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: -26%;
+    left: 44%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  .about-us .triangle-container .triangle .point.point-left .flex-mobile-start {
+    align-self: flex-start;
+  }
+  .about-us .triangle-container .triangle .point.point-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: -25%;
+    right: -17%;
+    transform: translateX(50%);
+  }
+  .about-us .triangle-container .triangle .point.point-right .flex-mobile-started {
+    align-self: flex-start;
+  }
+  .about-us .triangle-container .triangle .point.point-right .break-mobile {
+    max-width: 100px;
+  }
+  .get-quick-mar-blk {
+    padding-block: 3.6rem;
+  }
+  .get-quick-heading {
+    font-size: 1.6rem;
+  }
+  .get-cards {
+    gap: 2rem;
+  }
+  .mailing-parent {
+    gap: 2rem;
+  }
+  .mailing-parent .mailing-content {
+    padding: 1.6rem;
+  }
+  .mailing-parent .mailing-content h4 {
+    font-size: 1.4rem;
+  }
+  .mailing-parent .mailing-content h3 {
+    font-size: 1.6rem;
+    padding-block: 1.6rem;
+  }
+  .mailing-parent .mailing-content form .text-mailing {
+    width: 100%;
+    margin-right: 0rem;
+  }
+  .mailing-parent .mailing-content form .submit-mailing {
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+  .mailing-parent .mailing-content form .checkbox {
+    margin-top: 1rem;
+    text-align: start;
+  }
+  .footer-bg {
+    background: url(../images/footer-bg.png) no-repeat;
+    background-size: auto;
+    background-position-x: right;
+    background-position-y: center;
+  }
+  .footer-links {
+    padding-top: 3.6rem;
+    padding-right: 0rem;
+    gap: 3rem;
+  }
+  .footer-one h2 {
+    margin-bottom: 1.2rem;
+  }
+  .footer-one .copy-right-parent {
+    padding-block: 3rem;
+  }
+  .footer-one .copy-right {
+    font-size: 1.6rem;
+    letter-spacing: 1.84px;
+    color: #5f6168;
+    text-align: center;
+  }
+  .footer-one .soical-linkgap {
+    color: #5f6168;
+  }
+  .footer-one .soical-linkgap .network-status {
+    padding-top: 1rem;
+  }
+  .copy-right-parent {
+    padding-block: 3rem;
+  }
+  .soical-linkgap {
+    gap: 1.7rem;
+    font-size: 1.6rem;
+    letter-spacing: 1.84px;
+    color: #5f6168;
+  }
+  .soical-linkgap .network-status {
+    padding-top: 1.6rem;
+  }
+}/*# sourceMappingURL=main.css.map */
